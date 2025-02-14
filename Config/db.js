@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 
 async function ConnectDB(){    
     try{
-        const response = await mongoose.connect(process.env.MONGODB_URL,{
+        const response = await mongoose.connect("mongodb+srv://creditklick21:qKU0hw7Kt6lApIho@godaddylogin.05t78.mongodb.net/GODADDY_AUTH?retryWrites=true&w=majority&appName=GoDaddyLogin",{
           useNewUrlParser : true,
           useUnifiedTopology : true
         });
